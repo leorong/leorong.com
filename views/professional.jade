@@ -1,0 +1,215 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(name="description", content="")
+		meta(name="author", content="")
+		title Leo Rong - Professional Profolio
+		// favicon
+		link(rel="shortcut icon", type="image/png", href="images/professional.png")
+		// Bootstrap Core CSS
+		link(href="stylesheets/bootstrap.min.css", rel="stylesheet")
+		// Custom CSS
+		link(href="stylesheets/custom.css", rel="stylesheet")
+		// Custom Fonts
+		link(href="font-awesome/css/font-awesome.min.css", rel="stylesheet", type="text/css")
+		link(href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic", rel="stylesheet", type="text/css")
+		link(href="http://fonts.googleapis.com/css?family=Montserrat:400,700", rel="stylesheet", type="text/css")
+		link(href="http://fonts.googleapis.com/css?family=Enriqueta", rel="stylesheet", type="text/css")
+	
+	body#page-top(data-spy="scroll", data-target=".navbar-fixed-top")
+		// Navigation
+		nav.navbar.navbar-custom.navbar-fixed-top(role="navigation")
+			.container
+				.navbar-header
+					button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
+						i.fa.fa-bars
+					a.navbar-brand.page-scroll(href="#page-top")
+						| Leo Rong
+				.navbar-collapse.collapse
+					ul.nav.navbar-nav
+						li.dropdown
+							a.dropdown-toggle(href="#", data-toggle="dropdown")
+								i.fa.fa-briefcase
+								| &#160;Professional Profolio&#160;
+								span.caret
+							ul.dropdown-menu
+								li
+									a(href="")
+										i.fa.fa-briefcase
+										| &#160;Professional Profolio
+								li
+									a(href="")
+										i.fa.fa-user
+										| &#160;Fitness Blog
+								li
+									a(href="")
+										i.fa.fa-camera
+										| &#160;Photography Profolio
+					ul.nav.navbar-nav.navbar-right
+						// Hidden li included to remove active class from about link when scrolled up past about section
+						li.hidden
+							a(href="#page-top")
+						li
+							a.page-scroll(href="#about") About
+						li
+							a.page-scroll(href="#resume") Resume
+						li
+							a.page-scroll(href="#projects") Projects
+						li
+							a.page-scroll(href="#contact") Contact
+				// /.navbar-collapse
+			// /.container
+		// Intro Header
+		header.intro
+			.intro-body
+				.container
+					.row
+						.col-md-8.col-md-offset-2
+							h1.brand-heading Leo Rong
+							p.intro-text  - Professional Profolio - 
+							a.btn.btn-circle.page-scroll(href="#about")
+								i.fa.fa-angle-double-down.animated
+		// About Section
+		section#about.content-section
+			.container
+				.col-lg-8.col-lg-offset-2
+					.text-center
+						p
+							img(src="images/reo.jpg")
+						h2 About Me
+					p
+						| In April 2015, Leo will be graduating from Stanford University with a B.S. degree in Computer Science with the concentration in Human Computer Interaction. After graduation, Leo will be joining Splunk as a Software Engineer for the Client Platform team in the summer of 2015.
+					p
+						| Leo"s ultimate career goal is to have the ability to create, maintain, and improve any web-based and mobile-based software products that can change people"s life for the better.
+					p
+						| Apart from Leo"s interest in technology, he enjoys living a healthy, adventurous, and spontaneous life.
+		// Resume Section
+		section#resume.content-section
+			.container
+				p.text-center
+					a.btn.btn-default.btn(href="document/Resume.pdf", download="")
+						i.fa.fa-print
+						| Download Resume
+				// Education Section
+				.resume-block
+					.row
+						.resume-title
+							.col-lg-3
+								p
+									i.fa.fa-book
+									| &#160;Education
+						.resume-content
+							.col-lg-6
+								p.institution Stanford University
+								p.title B.S. of Computer Science - Human Computer Interaction
+								br
+							.col-lg-3
+								p.location Stanford, CA
+								p.time June, 2010 - April, 2015
+								br
+				// Work Experience Section
+				.resume-block
+					.row
+						.resume-title
+							.col-lg-3
+								p
+									i.fa.fa-briefcase
+									| &#160;Work Experience
+						.resume-content
+							.resume-item
+								.col-lg-6
+									p.institution IBM Silicon Valley Lab
+									p.title Software Engineer Intern
+									br
+									p.description
+										| &#8226; Designed and implemented an internal calendar tool for the Software Development Integration (SDI)Team, which is used by SDI team members at numerous IBM sites (Toronto, Portland, San Jose&#8230;).
+									p.description &#8226; Technologies used: Java, JavaScript (Dojo Toolkit), and JSP.
+									br
+								.col-lg-3
+									p.location San Jose, CA
+									p.time June, 2013 - December, 2013
+									br
+					.row
+						.resume-content
+							.resume-item
+								.col-lg-6.col-lg-offset-3
+									p.institution Stanford University Archive
+									p.title Web Developer Intern
+									br
+									p.description
+										| &#8226; Helped building
+										a(href="http://mobisocial.stanford.edu/muse") MUSE
+										| &#8211; a web application used to analyze and archive emails.
+									p.description &#8226; Technologies used: Java, JavaScript, and JSP.
+									br
+								.col-lg-3
+									p.location Stanford, CA
+									p.time June, 2012 - September, 2012
+									br
+					.row
+						.resume-content
+							.resume-item
+								.col-lg-6.col-lg-offset-3
+									p.institution Columbia University Medical Center
+									p.title Research Assistant
+									br
+									p.description
+										| &#8226; Designed and synthesized a molecular device to automatically release insulin for diabetes therapy.
+									p.description
+										| &#8226; Cultured prostate cancer stem cells and tested them on thousands of drugs and compounds in the lab.
+									p.description &#8226; Supervised high school students for their summer internship.
+									br
+								.col-lg-3
+									p.location New York, NY
+									p.time Summer 2008, 2009, 2011
+									br
+		// Project Section
+		section#projects.content-section
+			.container
+				.row.project-block
+					.col-lg-6.project-img
+						img(src="images/gitfit.png")
+					.col-lg-6.project-info
+						p.title.text-center GitFit
+						p
+							| A mobile web application to connect athletes with gym partners based on your activities and schedule.
+						p Technologies used: Node.js, Express, and MongoDB/Mongoose.
+						p
+							| View at
+							a(href="https://git-fit.herokuapp.com") https://git-fit.herokuapp.com
+		// Contact Section
+		section#contact.content-section.text-center
+			.container
+				.col-lg-8.col-lg-offset-2
+					h2 Contact Me
+					p Feel free to email me about any questions you have.
+					p
+						a(href="mailto:leorong@stanford.edu") leorong@stanford.edu
+					ul.list-inline.banner-social-buttons
+						li
+							a.btn.btn-default.btn-lg(href="https://linkedin.com/in/leorong")
+								i.fa.fa-linkedin.fa-fw
+								span.network-name LinkedIn
+						li
+							a.btn.btn-default.btn-lg(href="https://github.com/leorong")
+								i.fa.fa-github.fa-fw
+								span.network-name Github
+						li
+							a.btn.btn-default.btn-lg(href="https://facebook.com/leo.rong")
+								i.fa.fa-facebook.fa-fw
+								span.network-name Facebook
+		// Footer
+		footer
+			.container.text-center
+				p Copyright &#169; Leo Rong 2015
+		// jQuery
+		script(src="javascripts/jquery.js")
+		// Bootstrap Core JavaScript
+		script(src="javascripts/bootstrap.min.js")
+		// Plugin JavaScript
+		script(src="javascripts/jquery.easing.min.js")
+		// Custom Theme JavaScript
+		script(src="javascripts/custom.js")
