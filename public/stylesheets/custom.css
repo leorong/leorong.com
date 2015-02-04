@@ -334,11 +334,20 @@ a:focus {
 
 #projects img {
     height:auto;
-    max-width:90%;
+    width:100%;
+    max-width:400px;
+}
+
+#projects .rentdropper {
+    border-radius: 80px;
 }
 
 #projects p {
     font-size:17px;
+}
+
+#projects .project-block {
+    margin-bottom:8%;
 }
 
 #projects .title {
