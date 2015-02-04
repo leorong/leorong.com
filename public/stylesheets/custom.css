@@ -180,7 +180,7 @@ a:focus {
     height:auto;
     width:30%;
     border-radius: 150px;
-    margin-top:-10%;
+    margin-top:-12%;
 }
 
 .btn-circle {
@@ -328,9 +328,13 @@ a:focus {
     color:#008B8B;
 }
 
+#projects h2 {
+    margin-top:-10%;
+}
+
 #projects img {
     height:auto;
-    width:100%;
+    max-width:90%;
 }
 
 #projects p {
@@ -342,17 +346,12 @@ a:focus {
     font-weight:bold;
 }
 
-#projects .project-block {
-    margin-top: -10%;
-}
-
 #projects .project-info {
-    padding-top:10%;
-    padding-bottom:10%;
+    padding-top:3%;
 }
 
 #contact {
-    
+    margin-bottom:-5%;
 }
 
 @media(min-width:767px) {

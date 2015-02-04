@@ -55,9 +55,9 @@ html(lang="en")
 						li
 							a.page-scroll(href="#about") About
 						li
-							a.page-scroll(href="#resume") Resume
-						li
 							a.page-scroll(href="#projects") Projects
+						li
+							a.page-scroll(href="#resume") Resume
 						li
 							a.page-scroll(href="#contact") Contact
 				// /.navbar-collapse
@@ -86,13 +86,29 @@ html(lang="en")
 						| Leo"s ultimate career goal is to have the ability to create, maintain, and improve any web-based and mobile-based software products that can change people"s life for the better.
 					p
 						| Apart from Leo"s interest in technology, he enjoys living a healthy, adventurous, and spontaneous life.
+		// Project Section
+		section#projects.content-section
+			.container
+				.row.text-center
+					h2 
+						i.fa.fa-folder-open-o 
+						| &#160;Projects
+				.row.project-block
+					.col-lg-6.project-info
+						p.title.text-center GitFit
+						p &#8226; A mobile web application to connect athletes with gym partners based on your activities and schedule.
+						p &#8226; Technologies used: Node.js, Express, and MongoDB/Mongoose.
+						p &#8226; View at 
+							a(href="https://git-fit.herokuapp.com") https://git-fit.herokuapp.com
+					.col-lg-6.project-img.text-center
+						img(src="images/gitfit.png")
 		// Resume Section
 		section#resume.content-section
 			.container
 				p.text-center
 					a.btn.btn-default.btn(href="document/Resume.pdf", download="")
 						i.fa.fa-print
-						| Download Resume
+						| &#160;Download Resume
 				// Education Section
 				.resume-block
 					.row
@@ -166,25 +182,13 @@ html(lang="en")
 									p.location New York, NY
 									p.time Summer 2008, 2009, 2011
 									br
-		// Project Section
-		section#projects.content-section
-			.container
-				.row.project-block
-					.col-lg-6.project-img
-						img(src="images/gitfit.png")
-					.col-lg-6.project-info
-						p.title.text-center GitFit
-						p
-							| A mobile web application to connect athletes with gym partners based on your activities and schedule.
-						p Technologies used: Node.js, Express, and MongoDB/Mongoose.
-						p
-							| View at
-							a(href="https://git-fit.herokuapp.com") https://git-fit.herokuapp.com
 		// Contact Section
 		section#contact.content-section.text-center
 			.container
 				.col-lg-8.col-lg-offset-2
-					h2 Contact Me
+					h2
+						i.fa.fa-envelope-o
+						| &#160;Contact Me
 					p Feel free to email me about any questions you have.
 					p
 						a(href="mailto:leorong@stanford.edu") leorong@stanford.edu
