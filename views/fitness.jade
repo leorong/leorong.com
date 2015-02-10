@@ -1,0 +1,74 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(name="description", content="Professional Portfolio of Leo Rong")
+		meta(name="keywords", content="Leo,Rong,Portfolio,Software,Engineer,Stanford")
+		meta(name="author", content="Leo Rong")
+		title Leo Rong - Fitness Blog
+		// favicon
+		link(rel="shortcut icon", type="image/png", href="images/professional.png")
+		// Bootstrap Core CSS
+		link(href="stylesheets/bootstrap.min.css", rel="stylesheet")
+		// Custom CSS
+		link(href="stylesheets/fitness.css", rel="stylesheet")
+		// Custom Fonts
+		link(href="font-awesome/css/font-awesome.min.css", rel="stylesheet", type="text/css")
+		link(href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic", rel="stylesheet", type="text/css")
+		link(href="http://fonts.googleapis.com/css?family=Montserrat:400,700", rel="stylesheet", type="text/css")
+		link(href="http://fonts.googleapis.com/css?family=Enriqueta", rel="stylesheet", type="text/css")
+	
+	body#page-top(data-spy="scroll", data-target=".navbar-fixed-top")
+		// Navigation
+		nav.navbar.navbar-custom.navbar-fixed-top(role="navigation")
+			.container
+				.navbar-header
+					button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
+						i.fa.fa-bars
+					a.navbar-brand.page-scroll(href="#page-top")
+						| Leo Rong
+				.navbar-collapse.collapse
+					ul.nav.navbar-nav
+						li.dropdown
+							a.dropdown-toggle(href="#", data-toggle="dropdown")
+								i.fa.fa-user
+								| &#160;Fitness Blog&#160;
+								span.caret
+							ul.dropdown-menu
+								li
+									a(href="/")
+										i.fa.fa-briefcase
+										| &#160;Professional Portfolio
+								li
+									a(href="/photography")
+										i.fa.fa-camera
+										| &#160;Photography Portfolio
+					//ul.nav.navbar-nav.navbar-right
+						li.hidden
+							a(href="#page-top")
+
+				// /.navbar-collapse
+			// /.container
+		// Intro Header
+		header.intro
+			.intro-body
+				.container
+					.row
+						.col-md-8.col-md-offset-2
+							h1.brand-heading Fitness Blog
+							p.intro-text  Coming Soon!
+		
+		// Footer
+		//footer
+			.container.text-center
+				p Copyright &#169; Leo Rong 2015
+		// jQuery
+		script(src="javascripts/jquery.js")
+		// Bootstrap Core JavaScript
+		script(src="javascripts/bootstrap.min.js")
+		// Plugin JavaScript
+		script(src="javascripts/jquery.easing.min.js")
+		// Custom Theme JavaScript
+		script(src="javascripts/custom.js")
