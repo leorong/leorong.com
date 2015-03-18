@@ -325,6 +325,10 @@ a:focus {
     font-weight:bold;
 }
 
+.resume-content .description-list{
+    margin-left:-20px;
+}
+
 .resume-content .description {
     font-size:14px;
     color:#008B8B;
